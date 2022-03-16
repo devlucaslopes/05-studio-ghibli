@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import "partials/theme";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-size: $text-m;
+  color: $white;
+  background: $gradient;
+}
+
+svg,
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 109rem;
+  margin: 0 auto;
+}
+
+@import "partials/header";
