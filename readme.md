@@ -13,7 +13,7 @@
 
 ---
 
-<a href="https://.vercel.app/" target="_blank">Versão online</a>
+<a href="https://chihiro-bolado.vercel.app/" target="_blank">Versão online</a>
 
 É um desafio criado pela comunidade [Codelândia](https://discord.gg/wNCWTVuxyz). O layout original está no [Figma](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?node-id=58198%3A756).
 
