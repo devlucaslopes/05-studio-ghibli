@@ -17,6 +17,11 @@ body {
   font-size: $text-m;
   color: $white;
   background: $gradient;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
 }
 
 svg,
@@ -30,3 +35,5 @@ img {
 }
 
 @import "partials/header";
+@import "partials/hero";
+@import "partials/button";

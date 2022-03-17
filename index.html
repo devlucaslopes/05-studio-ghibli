@@ -12,6 +12,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/svg-inject.js"></script>
   </head>
   <body>
     <div class="container">
@@ -20,25 +23,75 @@
 
         <ul>
           <li>
-            <a href="#">
+            <a href="https://www.instagram.com/devlucaslopes/" target="_blank">
               <img
                 src="./svgs/icon-instagram.svg"
-                alt="Meu perfil no Instagram"
+                alt="Meu perfil no Instragram"
+                onload="SVGInject(this)"
               />
             </a>
           </li>
           <li>
-            <a href="#">
-              <img src="./svgs/icon-twitter.svg" alt="Meu perfil no Twitter" />
+            <a href="https://twitter.com/odevlucaslopes" target="_blank">
+              <img
+                src="./svgs/icon-twitter.svg"
+                alt="Meu perfil no Twitter"
+                onload="SVGInject(this)"
+              />
             </a>
           </li>
           <li>
-            <a href="#">
-              <img src="./svgs/icon-youtube.svg" alt="Meu perfil no Youtube" />
+            <a href="https://www.youtube.com/devlucaslopes" target="_blank">
+              <img
+                src="./svgs/icon-youtube.svg"
+                alt="Meu perfil no Youtube"
+                onload="SVGInject(this)"
+              />
             </a>
           </li>
         </ul>
       </header>
+
+      <main class="hero">
+        <section
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+        >
+          <h2>HAYAO MIYAZAKI</h2>
+          <h1>A VIAGEM DE CHIHIRO</h1>
+          <p>
+            Chihiro chega a um mundo mágico dominado por uma bruxa. Aqueles que
+            a desobedecem são transformados em animais.
+          </p>
+
+          <div class="buttons-wrapper">
+            <a href="#" class="btn filled">
+              <span>Assistir agora</span>
+            </a>
+            <a href="#" class="btn outline">
+              <span>Assista o trailer</span>
+            </a>
+          </div>
+        </section>
+        <section class="illustration">
+          <img
+            src="./svgs/chihiro-left.svg"
+            alt="chihiro left"
+            class="chihiro-left"
+          />
+
+          <img
+            src="./svgs/chihiro-right.svg"
+            alt="chihiro right"
+            class="chihiro-right"
+          />
+        </section>
+      </main>
     </div>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

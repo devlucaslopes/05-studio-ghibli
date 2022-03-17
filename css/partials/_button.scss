@@ -1,0 +1,55 @@
+.buttons-wrapper {
+  margin-top: $spacing-l;
+  display: flex;
+  gap: $spacing-l;
+}
+
+.btn {
+  display: inline-block;
+  padding: $spacing-s $spacing-xl;
+  color: $white;
+  transform: skew(-30deg);
+
+  span {
+    display: inherit;
+    transform: skew(30deg);
+  }
+}
+
+@keyframes fill-hover {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.filled {
+  background-color: $green;
+  position: relative;
+}
+
+.outline {
+  background-color: transparent;
+  border: 2px solid $green;
+}
+
+.filled,
+.outline {
+  &:hover {
+    color: $green;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: $white;
+
+      animation: fill-hover 0.5s ease forwards;
+    }
+  }
+}

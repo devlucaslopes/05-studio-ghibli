@@ -17,8 +17,32 @@ header ul {
   justify-content: center;
   gap: $spacing-l;
 
-  img {
+  svg {
     width: 2.4rem;
     height: 2.4rem;
   }
+}
+
+@keyframes drawing {
+  0% {
+    stroke-width: 1;
+    stroke-dasharray: 1 100;
+    stroke-opacity: 0;
+    stroke-dashoffset: 30;
+  }
+
+  100% {
+    stroke-width: 1;
+    stroke-dasharray: 10 0;
+    stroke-opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}
+
+.icon-stroke {
+  stroke-width: 1;
+  stroke-dasharray: 1 5;
+  stroke-opacity: 0;
+
+  animation: drawing 2s ease 3s forwards;
 }
